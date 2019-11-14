@@ -4,11 +4,13 @@ import 'hero.dart';
 import 'hero_service.dart';
 import 'route_paths.dart';
 
+import 'hero_search_component.dart';
+
 
 @Component(
   selector: 'my-dashboard',
   templateUrl: 'dashboard_component.html',
-  directives: [coreDirectives, routerDirectives],
+  directives: [coreDirectives, routerDirectives, HeroSearchComponent],
   styleUrls: ['dashboard_component.css'],
 )
 class DashboardComponent implements OnInit{
